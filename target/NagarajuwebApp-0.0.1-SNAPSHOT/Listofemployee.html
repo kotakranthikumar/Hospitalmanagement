@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LIST OF EMPLOYEE</title>
+</head>
+<body>
+WELCOME LIST OF EMPLOYEE
+<script>
+        function redirectToURL(urlpattern) {
+            window.location.href = urlpattern;
+        }
+</script>
+
+
+<head>
+  <title>Employee List</title>
+</head>
+<body>
+  <h2>Employee List</h2>
+  <form action="/employee" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="position">Position:</label>
+    <input type="text" id="position" name="position" required><br><br>
+    
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required><br><br>
+    
+    <input type="submit" value="Add Employee">
+  </form>
+</body>
+</html>
